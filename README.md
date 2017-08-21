@@ -1,5 +1,5 @@
 # namegen
-Random Name Generator
+Random Name Generator via Markov Chains (adapted from [drow](http://donjon.bin.sh)'s JavaScript implementation)
 
 ## how to use
 * `$ git clone git@github.com:michaelchadwick/namegen.git`
