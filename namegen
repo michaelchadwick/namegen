@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+# namegen
+# returns 1 to ARGV[0] random name(s)
+# (and copies to clipboard)
+
+require_relative "./name_generator"
+
+reps = ARGV[0] ? ARGV[0].to_i : 1
+
+1.upto(reps) do
+  name = NameGenerator.new('fantasy').generate_name
+  puts name
+  system("echo #{name} | pbcopy")
+end
